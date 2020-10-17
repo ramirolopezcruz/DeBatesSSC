@@ -88,26 +88,40 @@ header {
 	width: 100%;
 	background:rgba(0,0,0,0.2);
 }										/*sin uso*/
-
-																			/*sin uso*/
-/*cajaslide { 
+																		
+#producto {                /* muestra el producto unico*/
 	box-sizing:content-box;
-	
+	margin: 1em 0 1em 0;
 	z-index: 400;
 	position:static;
-	text-align:  center;
+
 	top: 0;
 	left: 0;
 	background: white;
-	
-	display:block;
+	height: 50vw;
+	display:list-item;
 	float:center;
-	width: 900px;
-	height: 342px;
-	
+	width: 90%;
 	padding: .75em 4em .75em 4em;
   	
-}*/
+}  
+
+#productosvarios {                /* muestra el producto unico*/
+	box-sizing:content-box;
+	margin: 1em 0 1em 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: white;
+	height: 50vw;
+	display:list-item;
+	float:center;
+	width: 90%;
+	padding: .75em 4em .75em 4em;
+  	
+}  
 
 
 
