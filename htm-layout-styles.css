@@ -40,7 +40,7 @@ navdebates {
 	margin: 1.5em 0 1.5em 1em;
   	opacity: .95;
  	position: relative;
- 	display: block !important;
+ 	display: block!important;
   	float: left;
  	
   	padding: 0;
@@ -71,13 +71,11 @@ navfinanzas {
 	z-index: 400;
 	top: 0;
  	left: 0;
-	margin: 1.5em 0 1.5em 1em;
-  	opacity: .95;
+	margin: 2em 1em 1.5em 1em;
  	position: relative;
- 	display: block !important;
   	float: left;
- 	
   	padding: 0;
+	width: 8vw;
 	
 	
 }	
@@ -86,7 +84,7 @@ navfinanzas {
 	box-sizing:content-box;
 	margin: 1em 0 1em 0;
 	z-index: 400;
-	position:static;
+	position:relative;
 	
 	top: 0;
 	left: 0;
@@ -95,22 +93,22 @@ navfinanzas {
 	display:block;
 	
 	width: 90%;
-	padding: .75em 5em .75em 5em;
+	padding: 1em 5em 1em 5em;
   	
 }
 finanzas {                /* muestra el producto unico*/
 	box-sizing:content-box;
-	margin: 1em 0 1em 0;
+	margin: 2em 0 1em 0;
 	z-index: 400;
 	position:relative;
 	text-align: center;
 	top: 0;
 	left: 0;
 	background: yellow;
-	
+	opacity: .50;
 	display:block;
 	float:right;
-	width: 73%;
+	width: 70%;
 	padding: .75em 5em .75em 5em;
   	
 } 
@@ -333,23 +331,41 @@ ul {
 	list-style-type:none;
 	margin: 0;
 	padding: 0;
+	
 	display:flex;
 	
 }
 li {
-	flex-grow: 0;	
+	flex-grow: 0;
+	position: relative;
+	
 }
 
-a {
+/*a {
 	background-color: blue;
 	color: white;
-	display: block;
+	
+    display:block;
+	
 	text-align: center;
 	margin: 2px 2px 2px 2px;
 	padding: 0.5em;
 	text-decoration:none;
 }
-a:hover {
+*/
+li a{
+	background-color: blue;
+	text-align: center;
+    text-decoration:none;
+    display:inline-block;
+	margin: 2px 2px 2px 2px;
+	padding: 0.5em;
+    width:8vw;
+    height:2em;
+    border:1px solid #000;
+    }
+
+li a:hover {
 	background-color: #CC673B;
 }
 ul li ul {
@@ -360,12 +376,11 @@ ul li a:hover + ul, ul li ul:hover {
 	}
 
 
-
 ul1 {
 	list-style-type:none;
 	margin: 0;
 	padding: 0;
-	display:contents;
+	display:block;
 	
 }
 
@@ -374,12 +389,19 @@ ul1 li ul {
 	
 }
 ul1 li a:hover + ul, ul1 li ul:hover {
-	display:flex;
+	display:block;
 	
 	}
 
+navfinanzas li ul{
+        display:none;
+        position:absolute;
+		width: 8vw;
+		top:0px;
+		margin: 0 0 0 8.2vw;
+    }
 
-
+ navfinanzas li:hover ul{display:block;}
 
 
 
