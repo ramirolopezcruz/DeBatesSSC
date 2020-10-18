@@ -18,6 +18,7 @@ body {
 
 
 
+
 headerdebates{
 	position: fixed;
 	padding: 0;
@@ -86,7 +87,7 @@ navfinanzas {
 	margin: 1em 0 1em 0;
 	z-index: 400;
 	position:static;
-
+	
 	top: 0;
 	left: 0;
 	background: white;
@@ -140,6 +141,56 @@ header {
   	
 }  
 
+#perfil {                /* muestra el producto unico*/
+	box-sizing:content-box;
+	margin: 2em 5% 2em 5%;
+	z-index: 400;
+	position:relative;
+	font: "aclonica";
+	top: 0;
+	left: 0;
+	background: white;
+	height: 30vw;
+	display:block;
+	float:center;
+	width: 80%;
+	padding: 2em 5em 2em 5em;
+  	
+}  
+
+fotoperfil {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 0 0 0 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: green;
+	height: 25vw;
+	display:block;
+	float: left;
+	width: 25vw;
+	padding: 1em 2em 1em 2em;
+  	
+}  
+datoperfil {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 0 0 0 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: yellow;
+	height: 25vw;
+	display:block;
+	
+	float: right;
+	width: 35vw;
+	padding: 1em 1em 1em 1em;
+  	
+} 
 
 #productosvarios {                /* muestra el producto unico*/
 	box-sizing:border-box;
@@ -417,7 +468,9 @@ cajafooter2 {
 	opacity: .25;*/
  	margin: 1em 0 1em 0;
 	padding: 1em 6em 1em 6em;
+	
 }
+
 
 footer {
 	position:relative;
