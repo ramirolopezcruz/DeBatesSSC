@@ -11,6 +11,7 @@ html * {
 body {
 	margin: 0;
 	padding: 1em 6em 1em 6em;
+	
 }
 
 
@@ -65,20 +66,53 @@ navdebates {
 
 
 
-nav {
+navfinanzas {
 	z-index: 400;
 	top: 0;
  	left: 0;
+	margin: 1.5em 0 1.5em 1em;
   	opacity: .95;
  	position: relative;
  	display: block !important;
-  	float: right;
- 	width: 30%;
-  	padding: 0 0 0 0;
-  	height: 2em;
+  	float: left;
+ 	
+  	padding: 0;
 	
 	
 }	
+
+#cuadrofinanzas {                /* muestra el producto unico*/
+	box-sizing:content-box;
+	margin: 1em 0 1em 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: white;
+	height: 50vw;
+	display:block;
+	
+	width: 90%;
+	padding: .75em 5em .75em 5em;
+  	
+}
+finanzas {                /* muestra el producto unico*/
+	box-sizing:content-box;
+	margin: 1em 0 1em 0;
+	z-index: 400;
+	position:relative;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: yellow;
+	
+	display:block;
+	float:right;
+	width: 73%;
+	padding: .75em 5em .75em 5em;
+  	
+} 
 header {
 	position: fixed;
 	padding: 1em;
@@ -99,12 +133,81 @@ header {
 	left: 0;
 	background: white;
 	height: 50vw;
+	display:block;
+	float:center;
+	width: 90%;
+	padding: .75em 5em .75em 5em;
+  	
+}  
+
+
+#productosvarios {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 1em 0 1em 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: white;
+	height: 50vw;
 	display:list-item;
 	float:center;
 	width: 90%;
 	padding: .75em 4em .75em 4em;
   	
 }  
+
+fotoproducto {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 0 0 0 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: yellow;
+	height: 60%;
+	display:block;
+	float: left;
+	width: 70%;
+	padding: 1em 2em 1em 2em;
+  	
+}  
+datoproducto {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 0 0 0 0;
+	z-index: 400;
+	position:static;
+
+	top: 0;
+	left: 0;
+	background: yellow;
+	height: 60%;
+	display:block;
+	
+	float: right;
+	width: 25%;
+	padding: 1em 1em 1em 1em;
+  	
+} 
+descripcionproducto {                /* muestra el producto unico*/
+	box-sizing:border-box;
+	margin: 43% 0 1em 0;
+	z-index: 400;
+	position:relative;
+
+	top: 0;
+	left: 0;
+	background: yellow;
+	
+	display:block;
+	text-align: center;
+	
+	width: 100%;
+	padding: 1em 1em 1em 1em;
+  	
+}
 
 #productosvarios {                /* muestra el producto unico*/
 	box-sizing:content-box;
@@ -121,10 +224,24 @@ header {
 	width: 90%;
 	padding: .75em 4em .75em 4em;
   	
-}  
+} 
 
-
-
+  .cajas{
+      width: 250px;
+      margin: 20px;
+      height: 350px;
+      background: rgb(222, 222, 222);
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+      float: left;
+  }
+   .con-cajas{
+	display: flex;
+   align-items: center;
+   justify-content: center;
+	
+	 
+	   
+ }
 
 
 #cajanoticias { 
@@ -163,21 +280,22 @@ encabezado {
 }                                 	/*titulos secundarios*/
 
 ul {
-	list-style-type: none;
+	list-style-type:none;
 	margin: 0;
 	padding: 0;
-	display: flex;
+	display:flex;
 	
 }
 li {
 	flex-grow: 0;	
 }
+
 a {
 	background-color: blue;
 	color: white;
 	display: block;
 	text-align: center;
-	margin-right: 2px;
+	margin: 2px 2px 2px 2px;
 	padding: 0.5em;
 	text-decoration:none;
 }
@@ -190,6 +308,31 @@ ul li ul {
 ul li a:hover + ul, ul li ul:hover {
 	display: block;
 	}
+
+
+
+ul1 {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	display:contents;
+	
+}
+
+ul1 li ul {
+	display:none;
+	
+}
+ul1 li a:hover + ul, ul1 li ul:hover {
+	display:flex;
+	
+	}
+
+
+
+
+
+
 b {
 	
 	color: black;
@@ -339,6 +482,13 @@ contenedorslide {
 .slideshow-container {
 	margin: 1em 20% 1em 20%;
   	max-width: 60%;
+ 	position: relative;
+	text-align: center;
+	float:center;
+}
+.slideshow-container1 {
+	margin: 1em 1em 1em 1em;
+  	max-width: 100%;
  	position: relative;
 	text-align: center;
 	float:center;
